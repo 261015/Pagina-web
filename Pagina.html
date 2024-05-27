@@ -1,0 +1,390 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki juegos</title>
+    <body background="https://as2.ftcdn.net/v2/jpg/02/42/76/11/1000_F_242761189_Zjtx0oajxxN1JN46dwrHnHZHPv25wVPL.jpg"></body>
+    <style>
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            color: #ffffff;
+            text-decoration: none;
+            border: 1px solid #666;
+            border-radius: 5px 5px 0 0;
+            background-color: #555;
+            transition: background-color 0.3s;
+        }
+
+        .tab:hover {
+            background-color: #777;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #666;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+        #tab1 {
+            background-image: url('https://static.wikia.nocookie.net/residentevil/images/d/da/Reverse_wallpaper_tension_in_air.jpg/revision/latest/scale-to-width-down/1200?cb=20221122030916');
+            background-size: cover; /* Adjust the image size to cover the entire tab */
+            background-position: center; /* Center the image */
+            color: #ffffff; /* Optional: Set text color for better visibility */
+        }
+        #tab2 {
+            background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bae58b19-3adb-45a5-a03c-2a2830f73337/dfdip6h-32322f08-64af-436b-9e30-68c2c5e1eb35.png/v1/fill/w_1280,h_910,q_80,strp/sonic_frontiers_wallpaper_by_junior3dsymas_dfdip6h-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTEwIiwicGF0aCI6IlwvZlwvYmFlNThiMTktM2FkYi00NWE1LWEwM2MtMmEyODMwZjczMzM3XC9kZmRpcDZoLTMyMzIyZjA4LTY0YWYtNDM2Yi05ZTMwLTY4YzJjNWUxZWIzNS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.j9H4xUip-okTdlZtjyA5aBp3oaKLvWPVS9aCK7aqLS8');
+            background-size: cover; /* Adjust the image size to cover the entire tab */
+            background-position: center; /* Center the image */
+            color: #ffffff; /* Optional: Set text color for better visibility */
+        }
+        #tab3 {
+            background-image: url('https://cdn.gfinityesports.com/images/ncavvykf/gfinityesports/c2a97cd8ffb6649e11d21889bf4f7c14f4a61a7e-809x455.jpg?rect=0,16,809,425&w=1200&h=630&auto=format');
+            background-size: cover; /* Adjust the image size to cover the entire tab */
+            background-position: center; /* Center the image */
+            color: #ffffff; /* Optional: Set text color for better visibility */
+        }
+        #tab4 {
+            background-image: url('https://pbs.twimg.com/media/EwSwd6vUcAgWEk3?format=jpg&name=4096x4096');
+            background-size: cover; /* Adjust the image size to cover the entire tab */
+            background-position: center; /* Center the image */
+            color: #ffffff; /* Optional: Set text color for better visibility */
+        }
+        #tab5 {
+            background-image: url('https://assetsio.gnwcdn.com/2x1_NSwitchDS_BatmanArkhamTrilogy.jpg?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp');
+            background-size: cover; /* Adjust the image size to cover the entire tab */
+            background-position: center; /* Center the image */
+            color: #ffffff; /* Optional: Set text color for better visibility */
+        }
+    </style>
+</head>
+
+<body>
+    <th><a style="color:white;" href="Crear cuenta.html">Registrarse</a></th>
+    <th><a style="color:white;" href="login.html">Iniciar Sesion</a></th>
+
+    <h1 style="color:white;">Wiki juegos</h1>
+
+    <p style="color:white;">Esta pagina se dedica a recopilar informacion de distintos videojuegos</p>
+
+    <nav class="tabs">
+        <a href="#" class="tab" onclick="showContent('tab1')">Resident Evil</a>
+        <a href="#" class="tab" onclick="showContent('tab2')">Sonic The Hedgehog</a>
+        <a href="#" class="tab" onclick="showContent('tab3')">Tomb Raider (Survivor)</a>
+        <a href="#" class="tab" onclick="showContent('tab4')">Crash Bandicoot</a>
+        <a href="#" class="tab" onclick="showContent('tab5')">Batman Arkham</a>
+    </nav>
+
+    <div id="tab1" class="tab-content active" >
+        <h2 style="color:white;">Resident Evil</h2>
+        
+        <p style="color:white;">Biohazard (バイオハザード Baiohazādo?, 'riesgo biológico') —nombre con que se conoce en Japón—, rebautizado en Estados Unidos y Europa como Resident Evil (“la maldad residente”), es una serie de videojuegos de terror y una franquicia de medios, entre los que se incluyen manga, novelas, películas y coleccionables como figuras de acción, guías de estrategia y otras publicaciones. Desarrollados por Capcom y creados por Shinji Mikami la mayoría, al año 2014, se han vendido 61 millones de copias de los videojuegos en todo el mundo. Así como en la saga principal de videojuegos, como en otros medios, la trama gira en torno al mismo conflicto: la amenaza bioterrorista. Un peligroso virus se ha propagado por error o intencionalmente por la Corporación Umbrella, este al infectar a los humanos, los transforma en seres amorfos y monstruos.</p>
+
+        <table border="1">
+            <tr style="color:white;">
+                <th>Nombre</th>
+                <th>Año</th>
+                <th>Consolas</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="RE1.html">Resident Evil</a></th>
+                <th>1996</th>
+                <th>PS1</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="RE2.html">Resident Evil 2</a></th>
+                <th>1998</th>
+                <th>PS1</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="RE3.html">Resident Evil 3 Nemesis</a></th>
+                <th>1999</th>
+                <th>PS1</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="RECV.html">Resident Evil Code Veronica</a></th>
+                <th>2001</th>
+                <th>PS2, DreamCast & GameCube</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="RE0.html">Resident Evil 0</a></th>
+                <th>2002</th>
+                <th>GameCube</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="RE4.html">Resident Evil 4</a></th>
+                <th>2005</th>
+                <th>PS2 & GameCube</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="RE5.html">Resident Evil 5</a></th>
+                <th>2009</th>
+                <th>Xbox 360, PS3 & PC</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="RE6.html">Resident Evil 6</a></th>
+                <th>2012</th>
+                <th>Xbox 360, PS3 & PC</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="RE7.html">Resident Evil 7: Biohazrd</a></th>
+                <th>2017</th>
+                <th>Xbox One, PS4 & PC</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="RE8.html">Resident Evil 8: Village</a></th>
+                <th>2021</th>
+                <th>Xbox One, Xbox Series X/S, PS4, PS5 & PC</th>
+            </tr>
+        </table>    
+    </div>
+
+    <div id="tab2" class="tab-content" style="background-color:rgb(0, 119, 255)";>
+        <h2 style="color:white;">Sonic The Hedgehog</h2>
+
+        <p style="color:white;">Sonic the Hedgehog es una serie de videojuegos y franquicia multimedia creada por los desarrolladores japoneses Yuji Naka, Naoto Ohshima y Hirokazu Yasuhara para Sega. La franquicia sigue a Sonic, un erizo azul antropomórfico que lucha contra el malvado Doctor Eggman, un científico loco. Los principales juegos de Sonic the Hedgehog son juegos de plataformas desarrollados en su mayoría por Sonic Team; Otros juegos, desarrollados por varios estudios, incluyen spin-offs en los géneros de carreras, lucha, fiesta y deportes. La franquicia también incorpora medios impresos, animaciones, largometrajes y merchandising.</p>
+
+        <table border="2">
+            <tr style="color:white;">
+                <th>Nombre</th>
+                <th>Año</th>
+                <th>Consolas</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="S1.html">Sonic The Hedgehog</a></th>
+                <th>1991</th>
+                <th>Sega Genesis & GameGear</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="S2.html">Sonic The Hedgehog 2</a></th>
+                <th>1992</th>
+                <th>Sega Genesis & GameGear</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="SCD.html">Sonic The Hedgehog CD</a></th>
+                <th>1993</th>
+                <th>Sega Mega CD</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="S3&K.html">Sonic The Hedgehog 3 & Knuckles</a></th>
+                <th>1994</th>
+                <th>Sega Genesis</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="SA.html">Sonic Adventure</a></th>
+                <th>1998</th>
+                <th>DreamCast & GameCube</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="SA2.html">Sonic Adventure 2</a></th>
+                <th>2001</th>
+                <th>DreamCast & GameCube</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="SH.html">Sonic Heroes</a></th>
+                <th>2003</th>
+                <th>Xbox, PS2, GameCube & PC</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="S06.html">Sonic The Hedgehog (2006)</a></th>
+                <th>2006</th>
+                <th>Xbox 360 & PS3</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="SU.html">Sonic Unleashed</a></th>
+                <th>2008</th>
+                <th>Xbox 360 & PS3</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="SC.html">Sonic Colors</a></th>
+                <th>2010</th>
+                <th>Wii & Nintendo DS</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="S4E1.html">Sonic The Hedgehog 4 Episodio 1</a></th>
+                <th>2010</th>
+                <th>Xbox 360, PS3, PC & Moviles</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="SG.html">Sonic Generations</a></th>
+                <th>2011</th>
+                <th>Xbox 360, PS3, Nintendo 3DS & PC</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="S4E2.html">Sonic The Hedgehog 4 Episodio 2</a></th>
+                <th>2012</th>
+                <th>Xbox 360, PS3, PC & Moviles</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="SLW.html">Sonic Lost World</a></th>
+                <th>2013</th>
+                <th>Wii U & Nintendo 3DS</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="SFor.html">Sonic Forces</a></th>
+                <th>2017</th>
+                <th>Xbox One, PS4, Nintendo Switch & PC</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="SFro.html">Sonic Frontiers</a></th>
+                <th>2022</th>
+                <th>Xbox Series X/S, PS4, PS5 & PC</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="SSS.html">Sonic Superstars</a></th>
+                <th>2023</th>
+                <th>Xbox Series X/S, PS4, PS5 & PC</th>
+            </tr>
+        </table>    
+    </div>
+
+    <div id="tab3" class="tab-content" style="background-color:white";>
+        <h2 style="color:white;">Tomb Raider (Survivor)</h2>
+
+        <p style="color:white;">La saga "Survivor" de Tomb Raider es una trilogía de videojuegos que reinicia y reimagina los orígenes del icónico personaje de Lara Croft, enfocándose en su transformación de una joven inexperta a una superviviente y aventurera intrépida. Estos juegos fueron desarrollados por Crystal Dynamics y publicados por Square Enix. La trilogía se caracteriza por un enfoque más oscuro y realista en comparación con las entregas anteriores de la serie. La saga "Survivor" ha sido bien recibida por su narrativa emocional, su jugabilidad sólida y la evolución del personaje de Lara Croft, consolidando aún más su lugar en el mundo de los videojuegos.</p>
+
+        <table border="3">
+            <tr style="color:white;">
+                <th>Nombre</th>
+                <th>Año</th>
+                <th>Consolas</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="TR.html">Tomb Raider</a></th>
+                <th>2013</th>
+                <th>Xbox 360, PS3 & PC</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="RTR.html">Rise Of The Tomb Raider</a></th>
+                <th>2015</th>
+                <th>Xbox 360, Xbox One, PS4 & PC</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="STR.html">Shadow Of The Tomb Raider</a></th>
+                <th>2018</th>
+                <th>Xbox One, PS4 & PC</th>
+            </tr>
+        </table>    
+    </div>
+
+    <div id="tab4" class="tab-content" style="background-color:rgb(255, 153, 0)";>
+        <h2 style="color:white;">Crash Bandicoot</h2>
+
+        <p style="color:white;">Crash Bandicoot es el nombre de una serie de videojuegos protagonizado por el personaje del mismo nombre. Fue creada en 1996 por Naughty Dog, quien desarrolló los primeros cuatro títulos, bajo la distribución de Universal Interactive Studios. Los tres primeros juegos pertenecen al género de plataformas, sin embargo, con el tiempo se fue diversificando a otros géneros. La serie ha vendido más de 50 millones de copias en todo el mundo. La serie trata de Crash Bandicoot, un marsupial evolucionado por el científico loco el Dr. Neo Córtex, quien tenía intenciones viles de controlarlo mentalmente para dirigir su ejército de animales mutantes. Crash junto con otros personojes luchan contra Cortex y asi arruinar sus planes malvados.</p>
+
+        <table border="4">
+            <tr style="color:white;">
+                <th>Nombre</th>
+                <th>Año</th>
+                <th>Consolas</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="C1.html">Crash Bandicoot</a></th>
+                <th>1996</th>
+                <th>PS1</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="C2.html">Crash Bandicoot 2 Cortex Strikes Back</a></th>
+                <th>1997</th>
+                <th>PS1</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="C3.html">Crash Bandicoot 3 Warped</a></th>
+                <th>1998</th>
+                <th>PS1</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="CWC.html">Crash The Wrath of Cortex</a></th>
+                <th>2001</th>
+                <th>Xbox, PS2 & GameCube</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="CTW.html">Crash Twinsanity</a></th>
+                <th>2004</th>
+                <th>Xbox & PS2</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="CT.html">Crash of the Titans</a></th>
+                <th>2007</th>
+                <th>Xbox 360, PS2, PSP, Wii, GBA & Nintendo DS</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="CMOM.html">Crash Mind Over Mutant</a></th>
+                <th>2008</th>
+                <th>Xbox 360, PS2, PSP, Wii & Nintendo DS</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="C4.html">Crash Bandicoot 4 It's About Time</a></th>
+                <th>2020</th>
+                <th>Xbox One, PS4, Nintendo Switch</th>
+            </tr>
+        </table>    
+    </div>
+
+    <div id="tab5" class="tab-content" style="background-color:rgb(73, 72, 72)";>
+        <h2 style="color:white;">Batman Arkham</h2>
+
+        <p style="color:white;">Batman: Arkham es una serie de videojuegos y una película de acción protagonizados por el superhéroe ficticio Batman. El primer videojuego de esta franquicia fue Batman: Arkham Asylum, cuya historia se desarrollaba en el manicomio de Arkham. Tras el éxito de este juego se lanzaron varias secuelas y para saber que se trataba de la misma serie que Arkham Asylum se le agregó el seudónimo Arkham. El éxito de los juegos ha provocado que se lancen varios spin offs, películas y secuelas en cómics u otros medios. El más conocido es la historieta Batman: Arkham City, que sirve como secuela al videojuego homónimo. Los dos primeros juegos fueron desarrollados por Rocksteady Studios, el tercero por NetherRealm Studios y los últimos dos por Warner Bros. Games Montréal y Armature Studios.</p>
+
+        <table border="5">
+            <tr style="color:white;">
+                <th>Nombre</th>
+                <th>Año</th>
+                <th>Consolas</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="BAA.html">Batman Arkham Asylum</a></th>
+                <th>2009</th>
+                <th>Xbox 360, PS3 & PC</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="BAC.html">Batman Arkham City</a></th>
+                <th>2011</th>
+                <th>Xbox 360, PS3 & PC</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="BAO.html">Batman Arkham Origins</a></th>
+                <th>2013</th>
+                <th>Xbox 360, PS3 & PC</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="BAOB.html">Batman Arkham Origins: Blackgate</a></th>
+                <th>2013</th>
+                <th>PSVita & PC</th>
+            </tr>
+            <tr style="color:white;">
+                <th><a style="color:white;" href="BAK.html">Batman Arkham Knight</a></th>
+                <th>2015</th>
+                <th>Xbox One, PS4 & PC</th>
+            </tr>
+        </table>    
+    </div>
+
+    <script>
+        function showContent(tabId) {
+            // Oculta todos los contenidos
+            var contents = document.querySelectorAll('.tab-content');
+            contents.forEach(function (content) {
+                content.classList.remove('active');
+            });
+
+            // Muestra el contenido de la pestaña seleccionada
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
